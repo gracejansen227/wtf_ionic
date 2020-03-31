@@ -1,0 +1,7 @@
+{
+  "name": "wtf_practice",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

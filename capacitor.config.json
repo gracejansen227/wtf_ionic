@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "wtf_practice",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}
