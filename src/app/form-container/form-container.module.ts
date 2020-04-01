@@ -11,4 +11,9 @@ import { FormContainerComponent } from './form-container.component';
   declarations: [FormContainerComponent],
   exports: [FormContainerComponent]
 })
-export class FormContainerComponentModule {}
+export class FormContainerComponentModule {
+  
+  public submit() {
+    console.log('what upp booo');
+  }
+}

@@ -1,4 +1,17 @@
-<form #form="ngForm" (ngSubmit)="logForm(form)" novalidate>
-  <ion-button color="secondary" ion-button type="submit" block>One Person</ion-button>
-  <ion-button color="tertiary" ion-button type="submit" block>Quarantine Buddies</ion-button>
+<form id="formContainer" #form="ngForm" (ngSubmit)="onSubmit(form)" novalidate>
+  <ion-button ngModel color="secondary" #one="ngModel" ion-button type="submit" block>One Person</ion-button>
+  <ion-button ngModel color="tertiary" #two="ngModel" ion-button type="submit" block>Quarantine Buddies</ion-button>
 </form>
+
+<!-- <form id="formContainer" #form="ngForm" (ngSubmit)="onSubmit(form)" novalidate>
+  <ion-button [(ngModel)]="form.value" name="one" color="secondary" ion-button type="submit" block>One Person</ion-button>
+  <ion-button [(ngModel)]="form.value" color="tertiary" ion-button type="submit" block>Quarantine Buddies</ion-button>
+</form> -->
+
+<p>
+  This is the value here
+</p>
+
+<p>
+  This is the value here {{form.value | json}}
+</p>
