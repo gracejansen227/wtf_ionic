@@ -9,7 +9,7 @@ import { MultiPersonActivityEntry } from '../data/multiPersonActivities';
 })
 export class ActivityContainerComponent implements OnChanges {
   @Input()
-  public readonly data: MultiPersonActivityEntry[];
+  public readonly data: MultiPersonActivityEntry;
 
   constructor(
     private router: Router
