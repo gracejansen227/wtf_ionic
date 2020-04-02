@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Input, Component } from '@angular/core';
+import { multiPersonActivityData, MultiPersonActivityEntry } from '../data/multiPersonActivities';
+import { foodData } from '../data/foods';
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +9,10 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+ public activities: MultiPersonActivityEntry[];
+  constructor() {
+    this.activities = multiPersonActivityData;
+    this.foods = foodData;
+  }
 
 }
