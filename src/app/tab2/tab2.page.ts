@@ -9,12 +9,13 @@ import { foodData } from '../data/foods';
 })
 export class Tab2Page implements OnInit {
 
- public activities: MultiPersonActivityEntry[];
+public randomActivity: MultiPersonActivityEntry;
+public randomFood: MultiPersonActivityEntry;
+public activities: MultiPersonActivityEntry[];
+public foods: MultiPersonActivityEntry[];
   constructor() {
     this.activities = multiPersonActivityData;
     this.foods = foodData;
-    this.randomActivity = this.activities[0];
-    this.randomFood = this.foods[0];
   }
 
   ngOnInit(){

@@ -7,7 +7,7 @@ import { MultiPersonActivityEntry } from '../data/multiPersonActivities';
   templateUrl: './activity-container.component.html',
   styleUrls: ['./activity-container.component.scss'],
 })
-export class ActivityContainerComponent implements OnChanges {
+export class ActivityContainerComponent {
   @Input()
   public readonly data: MultiPersonActivityEntry;
 
