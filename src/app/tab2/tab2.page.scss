@@ -7,31 +7,26 @@ ion-content ion-toolbar {
 }
 
 #dinnerAndActivityContainer {
-
+  display: grid;
+  width: 300px;
 }
 
-p {
-  margin-top: 20px;
+ion-text {
   margin-bottom: 20px;
 }
 
-activity-container {
-  margin-bottom: 100px;
+h3 {
+  width: 100px;
+  text-align: center;
 }
 
 #reloadButtonContainer{
-  // text-align: center;
-  // display: flex;
-  // flex-direction: column;
-
-  position: absolute;
+  text-align: center;
   left: 0;
   right: 0;
-  left: 40%;
 }
 
 ion-button {
   width: 200px;
   margin: 50px;
-  margin-top: 96%
 }
