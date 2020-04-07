@@ -16,6 +16,9 @@
       <activity-container [data]="randomFood" ></activity-container>
     </div>
   </div>
+  <div>
+    <p>{{activitiesDataFromDb |  json}}</p>
+  </div>
   <div id=reloadButtonContainer>
     <ion-button color="tertiary" ion-button block (click)="onClick()" >Go Again!</ion-button>
   </div>
