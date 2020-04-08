@@ -6,4 +6,4 @@ export const dbconfig =
     host : "localhost",
     dialect : "postgres",
     port : 5432
-}
+};
