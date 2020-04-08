@@ -27,7 +27,7 @@ public foods: MultiPersonActivityEntry[];
 
     this.apiService.getAllData('activities').subscribe(
       data => this.activitiesDataFromDb = data,
-      error => console.log(error),
+      error => console.log(error.message),
       () => console.log("Completed")
     )
 
