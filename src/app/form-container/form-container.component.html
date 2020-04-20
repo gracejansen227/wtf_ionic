@@ -1,0 +1,24 @@
+<div id="formContainer">
+  <form #form="ngForm" (ngSubmit)="logForm(form)" novalidate>
+    <ion-item>
+      <ion-label>Activity or Dinner?</ion-label>
+      <ion-select value="type" okText="Okay" cancelText="Cancel" [(ngModel)]="todo.type" name="type">
+        <ion-select-option value="activity">Activity</ion-select-option>
+        <ion-select-option value="dinner">Dinner</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Describe your {{todo.type}} ... </ion-label>
+      <ion-textarea type="text" [(ngModel)]="todo.description" name="description"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label>How many people?</ion-label>
+      <ion-select value="1" okText="Okay" cancelText="Cancel" [(ngModel)]="todo.participantNum" name="participantNum">
+        <ion-select-option value="1">Solo</ion-select-option>
+        <ion-select-option value="2">Two or more</ion-select-option>
+        <ion-select-option value="0">Doesn't matter!</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-button color="tertiary" type="submit" block>Add Todo</ion-button>
+  </form>
+</div>
